@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'com.infomaximum'
-version '0.0.1'
+version '0.0.1p1'
 
 apply plugin: 'java'
 apply plugin: 'maven'

@@ -3,7 +3,7 @@ package com.infomaximum.querypool;
 import com.infomaximum.database.anotation.Entity;
 import com.infomaximum.database.domainobject.DomainObject;
 import com.infomaximum.database.domainobject.DomainObjectEditable;
-import com.infomaximum.database.exception.runtime.ClosedObjectException;
+import com.infomaximum.database.exception.ClosedObjectException;
 
 import java.util.HashMap;
 

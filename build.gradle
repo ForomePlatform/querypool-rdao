@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id 'maven'
+    id 'maven-publish'
 }
 
 group 'com.infomaximum'
@@ -14,7 +16,20 @@ if (file('publish.gradle').exists()) {
 
 sourceCompatibility = 1.8
 
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = "${this.group}"
+            artifactId = 'querypool-rdao'
+            version = "${this.version}"
+
+            from components.java
+        }
+    }
+}
+
 repositories {
+    mavenLocal()
     mavenCentral()
     maven { url "https://maven.corp.mobin.me/content/repositories/releases/" }
 }

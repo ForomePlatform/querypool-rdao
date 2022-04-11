@@ -1,6 +1,8 @@
 .gradle/
 build/
 .idea/
+*.gpg
+gradle.properties
 
 # ---> Java
 *.class

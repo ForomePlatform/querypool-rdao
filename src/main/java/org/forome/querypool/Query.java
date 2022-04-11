@@ -1,4 +1,4 @@
-package com.infomaximum.querypool;
+package org.forome.querypool;
 
 public abstract class Query<T> {
 

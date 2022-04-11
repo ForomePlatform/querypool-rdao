@@ -1,10 +1,10 @@
-package com.infomaximum.querypool;
+package org.forome.querypool;
 
-import com.infomaximum.database.domainobject.DomainObject;
-import com.infomaximum.database.domainobject.filter.EmptyFilter;
-import com.infomaximum.database.domainobject.filter.Filter;
-import com.infomaximum.database.exception.DatabaseException;
-import com.infomaximum.querypool.iterator.IteratorEntity;
+import org.forome.database.domainobject.DomainObject;
+import org.forome.database.domainobject.filter.EmptyFilter;
+import org.forome.database.domainobject.filter.Filter;
+import org.forome.database.exception.DatabaseException;
+import org.forome.querypool.iterator.IteratorEntity;
 
 public class ReadableResource<T extends DomainObject> {
 
@@ -29,7 +29,7 @@ public class ReadableResource<T extends DomainObject> {
 	}
 
 	public T find(final Filter filter, QueryTransaction transaction) {
-		try (com.infomaximum.database.domainobject.iterator.IteratorEntity<T> iter = transaction.getDBTransaction().find(tClass, filter, null)) {
+		try (org.forome.database.domainobject.iterator.IteratorEntity<T> iter = transaction.getDBTransaction().find(tClass, filter, null)) {
 			return iter.hasNext() ? iter.next() : null;
 		} catch (DatabaseException e) {
 			throw exceptionBuilder.buildDatabaseException(e);

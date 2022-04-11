@@ -1,4 +1,4 @@
-package com.infomaximum.utils.iterator;
+package org.forome.utils.iterator;
 
 
 public interface AIterator<T> extends AutoCloseable {

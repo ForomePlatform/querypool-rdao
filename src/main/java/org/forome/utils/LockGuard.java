@@ -1,4 +1,4 @@
-package com.infomaximum.utils;
+package org.forome.utils;
 
 import java.util.concurrent.locks.Lock;
 

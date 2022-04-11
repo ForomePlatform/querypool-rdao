@@ -1,8 +1,8 @@
-package com.infomaximum.querypool;
+package org.forome.querypool;
 
 
-import com.infomaximum.database.domainobject.DomainObject;
-import com.infomaximum.database.domainobject.DomainObjectEditable;
+import org.forome.database.domainobject.DomainObject;
+import org.forome.database.domainobject.DomainObjectEditable;
 
 public interface ResourceProvider {
 

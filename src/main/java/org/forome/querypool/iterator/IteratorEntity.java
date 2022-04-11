@@ -1,17 +1,17 @@
-package com.infomaximum.querypool.iterator;
+package org.forome.querypool.iterator;
 
-import com.infomaximum.database.domainobject.DomainObject;
-import com.infomaximum.database.exception.DatabaseException;
-import com.infomaximum.querypool.ExceptionBuilder;
-import com.infomaximum.utils.iterator.AIterator;
+import org.forome.database.domainobject.DomainObject;
+import org.forome.database.exception.DatabaseException;
+import org.forome.querypool.ExceptionBuilder;
+import org.forome.utils.iterator.AIterator;
 
 public class IteratorEntity<E extends DomainObject> implements AIterator<E> {
 
-	private final com.infomaximum.database.domainobject.iterator.IteratorEntity<E> ie;
+	private final org.forome.database.domainobject.iterator.IteratorEntity<E> ie;
 	private final ExceptionBuilder exceptionBuilder;
 
 	public IteratorEntity(
-			com.infomaximum.database.domainobject.iterator.IteratorEntity<E> ie,
+			org.forome.database.domainobject.iterator.IteratorEntity<E> ie,
 			ExceptionBuilder exceptionBuilder
 	) {
 		this.ie = ie;

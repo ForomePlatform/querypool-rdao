@@ -1,8 +1,8 @@
-package com.infomaximum.querypool;
+package org.forome.querypool;
 
-import com.infomaximum.database.domainobject.DomainObjectSource;
-import com.infomaximum.database.domainobject.Transaction;
-import com.infomaximum.database.exception.DatabaseException;
+import org.forome.database.domainobject.DomainObjectSource;
+import org.forome.database.domainobject.Transaction;
+import org.forome.database.exception.DatabaseException;
 
 public class QueryTransaction implements AutoCloseable {
 
